@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.colores {
+  color: hsl(225, 100%, 94%);
+  color: hsl(245, 75%, 52%);
+
+  color: hsl(225, 100%, 98%);
+  color: hsl(223, 66%, 72%);
+  color: hsl(223, 47%, 23%);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  transition: .3s;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/* SPECIFY */
+.card {
+  width: 405px;
+  height: 630px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+  .card .hero {
+    width: 405px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .card .card-content {
+    padding: 7%;
+    text-align: center;
+  }
+    .card .card-content h1 {
+      padding-bottom: 20px;
+      color: hsl(223, 47%, 23%);
+    }
+    .card .card-content p {
+      padding-bottom: 20px;
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+    }
+
+  .card .card-content .price {
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsla(225, 100%, 94%, 0.371);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+    .card .card-content .price .left {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      padding: 20px 20px 0px 20px;
+    }
+    .card .card-content .price .right a {
+      text-decoration: underline;
+      transition: all .5s ease-in-out;
+    }
+        .card .card-content .price .right a:hover {
+          color: hsl(245, 75%, 67%);
+          text-decoration: none;
+          transition: all .5s ease-in-out;
+        }
+
+  .card .card-content .btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    .card .card-content .btns button {
+      width: 95%;
+      height: 40px;
+      background-color: hsl(245, 75%, 52%);
+      border: none;
+      border-radius: 10px;
+      color: hsl(225, 100%, 98%);
+      cursor: pointer;
+      margin-bottom: 30px;
+      box-shadow: 0px 15px 10px hsla(224, 23%, 55%, 0.387);
+      transition: all .5s ease-in-out;
+    }
+      .card .card-content .btns button:hover {
+        background-color: hsl(245, 75%, 67%);
+        transition: all .5s ease-in-out;
+      }
+    .card .card-content .btns a {
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);
+      transition: all .5s ease-in-out;
+    }
+      .card .card-content .btns a:hover {
+        color: black;
+        transition: all .5s ease-in-out;
+      }
+
+@media (max-width:700px) {
+  *{
+    transition: .3s;
+  }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+  .card {
+    width: 330px;
+    height: 570px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+    .card .hero {
+      width: 330px;
+      border-radius: 15px 15px 0 0;
+    }
+
+      .card .card-content .price {
+        width: 100%;
+        border-radius: 15px;
+        background-color: hsla(225, 100%, 94%, 0.371);
+        display: grid;
+        grid-template-columns: 70% 30%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
